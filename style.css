@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: hsla(229, 100%, 0%, 0.76);
+  color: hsla(0, 0%, 100%, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h1 , h2 , h3 , h4 , h5 {
+  margin: 0;
+  font-family: "Roboto";
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+.balanceContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+  background: hsla(229, 66%, 0%, 0.22);
+  box-shadow: 0 0 2px 2px hsla(229, 0%, 100%, 0.1);
+  padding: 20px;
+  border-radius: 18px;
+  height: 160px;
+}
+.shortMenuBox {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.balanceContainer h2:first-child , .incomeBox h3:first-child , .ExpenseBox h3:first-child {
+  font-size: .65rem;
+  color: hsla(229, 0%, 81%, 0.76);
+}
+.incomeBox , .ExpenseBox {
+  width: 140px;
+  background: hsla(229, 0%, 100%, 0.08);
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.incomeBox h4 , .ExpenseBox h4 {
+  font-size: 1rem;
+  font-family: "Poppins";
+}
+.incomeBox h4 {
+  color: hsla(101, 100%, 54%, 0.91);
+}
+.ExpenseBox h4 {
+  color: hsla(0, 100%, 50%, 0.9);
+}
+.balanceContainer h2:nth-child(2) {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+}
+h1 {
+  font-size: 1.4rem;
+  margin: 15px;
+  margin-bottom: 0;
+}
+.transactionBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: hsla(229, 66%, 0%, 0.22);
+  padding: 15px;
+  box-shadow: 0 0 2px 2px hsla(229, 0%, 100%, 0.1);
+  border-radius: 18px;
+}
+.transactionBox h2 {
+  font-size: .9rem;
+}
+.classificationBox {
+  height: 35px;
+  display: flex;
+  justify-content: space-around;
+  background: hsla(229, 0%, 100%, 0.08);
+  align-items: center;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-size: .65rem;
+  font-weight: bolder;
+  color: hsla(229, 0%, 81%, 0.96);
+  padding: 0px 5px;
+  
+}
+.income {
+  
+  width: 50%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+}
+.selectedIncome {
+  background: hsla(121, 100%, 57%, 0.6);
+}
+.expense {
+  width: 50%;
+  
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 25px;
+}
+.selectedExpense {
+  background: hsla(360, 100%, 57%, 0.6);
+}
+form {
+  display: flex;
+  height: 220px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.grp {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.grp input {
+  height: 35px;
+  background: hsla(229, 0%, 100%, 0.08);
+  border: none;
+  border-radius: 6px;
+  padding-left: 10px;
+  color: hsla(360, 0%, 100%, 1);
+  font-family: "Poppins";
+}
+label {
+  font-family: "Roboto";
+  font-size: .67rem;
+}
+.grp input:focus {
+  outline: none;
+}
+.grp button {
+  height: 35px;
+  font-family: "Poppins";
+  border: none;
+  background: hsla(224, 100%, 54%, 0.84);
+  border-radius: 9px;
+  color: hsla(224, 0%, 100%, 1);
+  font-weight: bolder;
+}
+input[type="date"] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.transactHistoryBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+.heading h3:first-child {
+  font-size: .85rem;
+}
+.heading h3:nth-child(2) {
+  color: hsla(229, 0%, 81%, 0.96);
+  font-size: .65rem;
+}
+.containerForTransactions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 73px;
+  padding: 20px;
+  background: hsla(229, 66%, 0%, 0.22);
+  box-shadow: 0 0 0px 1px hsla(229, 0%, 100%, 0.1);
+  border-radius: 10px;
+}
+.grpContent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.content h4 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.content h5 {
+  color: hsla(229, 0%, 81%, 0.96);
+  font-size: .67rem;
+  font-weight: 400;
+}
+.action {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.action h4 {
+  font-family: "Roboto";
+  font-size: .85rem;
+}
+.action button {
+  border: none;
+  height: 25px;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-weight: 400;
+  background: transparent;
+  box-shadow: 0 0 0px 1px hsla(229, 0%, 100%, 0.1);
+  color: hsla(360, 0%, 100%, 1);
+}
+.icon-green {
+  background: hsla(135, 100%, 36%, 1);
+}
+.icon-red {
+  background: hsla(360, 86%, 38%, 1);
+}
+.green {
+  color: hsla(135, 100%, 36%, 1);
+}
+.red {
+  color: hsla(360, 86%, 38%, 1);
+}
